@@ -9,26 +9,37 @@ main {
 }
 /*   Здесь стили для блока шапки         */ 
 .header {
+  width: 100%;
+  max-width: 1052px;
+  margin: auto;
+  padding: 92px 24px 96px 24px;
   display: grid;
-  grid-template-columns: 1.51fr 2fr 1.5fr;
-  align-items: center; 
-  padding: 92px 24px 96px 24px;  
-  gap:32px
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
 }
 
 .header__links-list {
   display: flex;
-  white-space: nowrap;
-  gap: 36px;      /* Изображение прилипает к левому меню, почему? */
-  /* margin-right: 100px;  */
+  flex-direction: row;
+  gap: 32px;
+  list-style: none;
+  font-size: 18px;
 }
 
+.header__menu {
+  width: 387px;
+  height: 22px;
+}
 .header__links-list-item {
   list-style: circle;
+  line-height: 21px;
 }
 
 .header__links-list-item_no-bullit {
   list-style: none;
+  line-height: 21px;
 }
 
 .header__link {
@@ -44,18 +55,23 @@ main {
   display:block;
   justify-self: center;
   align-self: center;
-  width: 148px;
+  width: 131px;
 }
 
 .header__logo-image {
-  width: 140px;
+  width: 138px;
+  height: 105px;
   margin: auto;
 }
 
 .address {
+  width: 236.52px;
   display: flex;
-  font-style: inherit;
   flex-direction: column;
+  font-size: 18px;
+  font-style: normal;
+  justify-self: end;
+  line-height: 135%;
 }
 
 .header__address {
@@ -104,13 +120,14 @@ main {
 
 
 .lots {
-  padding: 350px 50px 350px;
+  margin-top: 179px;
+  margin-left: 28px;
  }
  
  .lots__heading {                       /* Это заголовок  */
   display:flex;
   justify-content: flex-start;
-  padding: 0 0 30px 40px;
+  padding: 0 0 30px 40px; 
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
@@ -129,7 +146,6 @@ main {
  .lost__card-list-item { /*Как понять: Каждый пункт списка мы ограничили шириной карточки, а также задали ему минимальную высоту.         */
   min-height: 100%;     /* какое значение должно быть у минимальной высоты
   /* flex-grow: 1; Если бы  элимент был бы display:flex: */
-  background-color: red;
   flex-grow:1
  }
 
@@ -142,14 +158,14 @@ main {
 .card {   
  display: flex;            /* Общие свойства для карточки */
  width: 334px;
- height: 100%;      /* Как растянуть карточку по высоте   */
+ min-height: 100%;      /* Как растянуть карточку по высоте   */
  position: relative;
  display: flex;
  flex-direction: column;
- justify-content: space-between;
  text-align: left;
+ justify-content: space-between;
  gap:30px;
- padding: 50px 40px; /*Если убрать пединги карточка сжимаеться, почему? Это рабоая область? Лучше размер через width задать или pedding */
+ padding: 51px 40px 24px 40px
 }
 
 
@@ -220,7 +236,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 24px;
-     padding: 20px 50px 20px;   /* Здесь вместо 20px был ноль */
+    padding: 20px 50px 20px;   /* Здесь вместо 20px был ноль */
+    margin-top: 200px;
   }
   
   .about__column {
