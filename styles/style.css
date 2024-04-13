@@ -243,7 +243,6 @@ main {
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  line-height: 1.2;
   color: #FFFFFF;
   z-index: 1;
 }
@@ -302,7 +301,6 @@ main {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.01em;
-  font-size: 20px;
 }
 
 .about__logo {
@@ -340,7 +338,8 @@ main {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 177px 44px 70px 59px
+  padding: 180px 43px 87px 59px;
+  gap:25px
 }
 
 .footer__social-icon {
@@ -357,10 +356,10 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 3px 0px 0px 3px;
+  padding:3px 12px 0px 44px;
 }
 
-.footer__menu-list-item .footer__social-list-item {
+ .footer__menu-list-item .footer__social-list-item { 
   font-family: 'Raleway';
   font-style: normal;
 }
@@ -372,32 +371,16 @@ main {
 
 .footer__social-list-item {
   list-style: none;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-
 }
 
 .footer__menu-list-item {
   list-style: none;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
-  color:rgba(0, 0, 0);
-  font-family: 'Raleway';
-  font-style: normal;
-  color: #000000;
 }
 
 .footer__menu-link_active {
   text-decoration:none;
 }
 
- 
 .footer__social-list {
   display:flex;
   gap: 48px;
@@ -405,7 +388,7 @@ main {
 }
 
 .footer__menu-link {
-font-size: 18px;
-line-height: normal;
-text-underline-position: under;
+  font-size: 18px;
+  line-height: normal;
+  text-underline-position: under;
 }
