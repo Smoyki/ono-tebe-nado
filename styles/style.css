@@ -7,8 +7,6 @@ main {
   margin: auto 0;
   width: 100%;
 }
-/*   Здесь стили для блока шапки         */ 
-
 .header {
   width: 100%;
   max-width: 1052px;
@@ -92,8 +90,6 @@ main {
   font-size: 18px;
   line-height: 1.35;
 }
-
-/*  Здесь начало блока Оно тебе надо */ 
 .cover {
   position: relative;
   padding: 165px 40px 50px 57px;
@@ -185,11 +181,6 @@ main {
   background-color: #FFF;
 }
 
-
-
-/* Тут начало части с карточками */
-
-
 .lots {
   padding:183px 32px;
  }
@@ -230,6 +221,9 @@ main {
   background-color: aqua;
   justify-content: space-between;
   text-align: left;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center; 
 }
 
 .card__title {
@@ -256,23 +250,16 @@ main {
 }
 
 .card_type_film {
-  background-image: url(../images/card-lot-01.jpg);    
-  background-repeat: no-repeat; 
-  background-size: cover;
-  background-position: center;       
+  background-image: url(../images/card-lot-01.jpg);         
 }
+
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
  .overlay {
@@ -288,12 +275,11 @@ main {
 .lots__look-more-link {
   display: flex;
   padding: 39px 0px 0px 40px;
-  font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  color: #000000;
+  color: rgba(0, 0, 0);
 }
 
 
@@ -371,7 +357,7 @@ main {
   flex-direction:column;
 }
 
-.footer__menu-list{
+.footer__menu-list {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -385,7 +371,7 @@ main {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.01em;
-  color: #000000;
+  color:rgba(0, 0, 0);
 }
 
 .foother__links-list {
