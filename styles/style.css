@@ -260,7 +260,7 @@ main {
   background-image: url(../images/card-lot-03.jpg);
 }
 
- .overlay_card {
+.overlay_card {
   position: absolute;
   top: 0;
   left: 0;
