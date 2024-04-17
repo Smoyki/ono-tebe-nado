@@ -356,7 +356,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 177px 50px 88px 50px; 
+  padding: 180px 50px 88px 50px; 
   gap:25px
 }
 
@@ -391,7 +391,6 @@
 .footer__social-list-item {
   list-style: none;
   font-family: "Raleway", sans-serif;
-  line-height: 21.13px;
 }
 
 .footer__menu-list-item {
@@ -408,7 +407,7 @@
   font-size: 18px;
   line-height: 21.1px;
   font-family: "Raleway", sans-serif;
-  line-height: 19.13px;
+  line-height: 21.13px;
 }
 
 .footer__social-list {

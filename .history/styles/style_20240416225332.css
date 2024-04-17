@@ -356,7 +356,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 177px 50px 88px 50px; 
+  padding: 180px 50px 88px 50px; 
   gap:25px
 }
 
@@ -368,19 +368,17 @@
 .address_footer {
   display: flex;
   flex-direction:column;
-  width: 240px;
+  max-width: 240px;
 
 }
 
 .footer__menu-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   /* padding:3px 12px 0px 44px; */
   font-size: 18px;
   line-height: 24.3px;
-  width: 150px;
-  height: fit-content;
 }
 
 .foother__links-list {
@@ -391,7 +389,6 @@
 .footer__social-list-item {
   list-style: none;
   font-family: "Raleway", sans-serif;
-  line-height: 21.13px;
 }
 
 .footer__menu-list-item {
@@ -399,16 +396,8 @@
   font-family: "Raleway", sans-serif;
 }
 
-.footer__menu-link.active {
+.footer__menu-link_active {
   text-decoration:none;
-  
-}
-
-.footer__menu-link{
-  font-size: 18px;
-  line-height: 21.1px;
-  font-family: "Raleway", sans-serif;
-  line-height: 19.13px;
 }
 
 .footer__social-list {
@@ -419,12 +408,7 @@
 
 .footer .address__item {
   font-size: 18px;
-  line-height: 24.3px;
-  font-family: "Raleway", sans-serif;
+  le
 }
 
-.foother_address__address-text {
-  font-size: 18px;
-  line-height: 24.3px;
-  font-family: "Raleway", sans-serif;
-}
+

@@ -290,7 +290,7 @@
 .about {
   display:  grid;
   grid-template-columns: 287px auto;
-  padding:0px 0px 0px 24px; 
+  padding:0px 24px 0px 24px; 
   min-height: 595px;
   max-width: 1052px;
   column-gap:72px;
@@ -299,7 +299,7 @@
 .about__column_text {
   padding-top:135px;
   display: flex;
-  height: fit-content;
+  height: auto;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -308,7 +308,6 @@
   letter-spacing: 0.01em;
   flex-direction: column;
   gap:100px;
-  min-width: 693px;
 }
 
 .about__logo {
@@ -346,17 +345,15 @@
   display: flex;
   flex-direction:column;
   gap: 25px;
+  text-align:start;
+  padding-top: 8px;
+  padding-right: 1px;
 }
-
-.about__text p:nth-child(1){
- letter-spacing: 0.01rem;
-}
-
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 177px 50px 88px 50px; 
+  padding: 1800px 50px 88px 50px; 
   gap:25px
 }
 
@@ -368,19 +365,15 @@
 .address_footer {
   display: flex;
   flex-direction:column;
-  width: 240px;
-
 }
 
 .footer__menu-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* padding:3px 12px 0px 44px; */
+  text-align: center;
+  padding:3px 12px 0px 44px;
   font-size: 18px;
-  line-height: 24.3px;
-  width: 150px;
-  height: fit-content;
+  line-height: 21px;
 }
 
 .foother__links-list {
@@ -391,7 +384,6 @@
 .footer__social-list-item {
   list-style: none;
   font-family: "Raleway", sans-serif;
-  line-height: 21.13px;
 }
 
 .footer__menu-list-item {
@@ -399,16 +391,8 @@
   font-family: "Raleway", sans-serif;
 }
 
-.footer__menu-link.active {
+.footer__menu-link_active {
   text-decoration:none;
-  
-}
-
-.footer__menu-link{
-  font-size: 18px;
-  line-height: 21.1px;
-  font-family: "Raleway", sans-serif;
-  line-height: 19.13px;
 }
 
 .footer__social-list {
@@ -417,14 +401,8 @@
   list-style: none;
 }
 
-.footer .address__item {
+.footer__menu-link {
   font-size: 18px;
-  line-height: 24.3px;
-  font-family: "Raleway", sans-serif;
-}
-
-.foother_address__address-text {
-  font-size: 18px;
-  line-height: 24.3px;
-  font-family: "Raleway", sans-serif;
+  line-height: normal;
+  text-underline-position: under;
 }
