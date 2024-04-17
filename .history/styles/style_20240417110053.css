@@ -358,8 +358,8 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 179px 50px 88px 50px;
-  gap:25px;
+  padding: 179px 50px 88px 50px; 
+  gap:25pxж
 }
 
 .footer__social-icon {
