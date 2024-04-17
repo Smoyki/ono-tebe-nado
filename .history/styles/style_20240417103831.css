@@ -35,7 +35,7 @@
 
 .header__links-list-item {
   list-style: circle;
-  text-decoration:underline; 
+  text-decoration:underline;
 }
 
 .header__links-list-item_no-bullit {
@@ -48,7 +48,8 @@
 }
 
 .header__link_active {
-  text-decoration:none;  
+  text-decoration:underline; */
+  text-decoration:none; 
 }
 
 .header__logo {
@@ -66,7 +67,7 @@
 }
 
 .address {
-  max-width: 241px;  
+  max-width: 241px;  /* max-width текст плывет */
   display: flex;
   flex-direction: column;
   font-size: 18px;
