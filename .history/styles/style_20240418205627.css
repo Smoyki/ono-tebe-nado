@@ -80,9 +80,6 @@
 .address__item {
   display: flex;
   text-underline-position: under;
-  font-size: 18px;
-  line-height: 24.3px;
-  font-family: "Raleway", sans-serif;
 }
 
 .cover {
@@ -310,6 +307,7 @@
 
 .logo__container {
   display: block;
+  position: relative;
   padding:35px 0px 0px 47px;
   width:fit-content;
   height:fit-content;
@@ -337,6 +335,8 @@
   letter-spacing: 0.01em;
 }
 
+
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -349,12 +349,20 @@
   height: 48px;
 }
 
+.address_footer {
+  display: flex;
+  flex-direction:column;
+  width: 240px;
+
+}
+
 .footer__menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 18px;
-  line-height: auto;
+  line-height: 24.3px;
+  width: 150px;
   height: fit-content;
 }
 
@@ -374,8 +382,9 @@
   font-family: "Raleway", sans-serif;
 }
 
-.link-active {
+.footer__menu-link.active {
   text-decoration:none;
+  
 }
 
 .footer__menu-link {
@@ -388,4 +397,16 @@
   display:flex;
   gap: 48px;
   list-style: none;
+}
+
+.footer .address__item {
+  font-size: 18px;
+  line-height: 24.3px;
+  font-family: "Raleway", sans-serif;
+}
+
+.foother_address__address-text {
+  font-size: 18px;
+  line-height: 24.3px;
+  font-family: "Raleway", sans-serif;
 }

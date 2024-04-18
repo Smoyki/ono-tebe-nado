@@ -26,7 +26,6 @@
   list-style: none;
   font-size: 18px;
   line-height: 21px;
-  flex-wrap:wrap;
 }
 
 .header__menu {
@@ -35,7 +34,7 @@
 
 .header__links-list-item {
   list-style: circle;
-  text-decoration: underline;
+  text-decoration:underline;
 }
 
 .header__links-list-item_no-bullit {
@@ -44,7 +43,7 @@
 
 .header__link {
   font-size: 18px;
-  text-decoration:underline;
+  text-decoration:none;
 }
 
 .header__link_active {
@@ -73,27 +72,31 @@
   font-style: normal;
   justify-self: end;
   line-height: 135%;
+  margin:0px;
+  box-sizing: border-box;
   padding: 0px 38px 0px 0px;
 }
 
 
+.header__address {
+  display: flex;
+  justify-self: end;
+}
+
 .address__item {
   display: flex;
   text-underline-position: under;
-  font-size: 18px;
-  line-height: 24.3px;
-  font-family: "Raleway", sans-serif;
 }
 
 .cover {
   position: relative;
+  padding: 0px 0px 0px 0px; /* Эти отступы не трогать спросить */
   background-image: url(../images/cover.jpg);
   background-position:center;
   background-repeat: no-repeat;
   max-width:1100px;
   background-size: cover;
-  height: 100%;
-  padding: 165px 50px 51px 50px;
+  height: 757px;
 }
 
 .overlay {
@@ -104,6 +107,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
+  padding: 165px 50px 51px 50px;
 }
 
 .cover__title {
@@ -181,26 +185,27 @@
 
 
 .lots {
-  padding:179px 24px 146px 24px;
+  padding:179px 24px 146px 24px;  /* Нет трогатб*/
  }
  
  .lots__heading {
   text-transform: uppercase;
   font-size: 40px;
-  padding: 0px 0px 27px 40px;
+  padding: 0px 891px 27px 40px;
   line-height: 47px;
   font-weight: 700;
-  width: 100%;
+  width: 563px;
+
 }
  
 .lots__card-list {
   display: flex;
-  gap: 25px; 
+  gap: 25px; /* меняю на gap с column-gap с 15px на 25px*/
   list-style: none;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /* меняю на wrap с nowrap */
 }
 
-.lots__card-list-item {
+.lots__card-list-item {  /* Исправил */
   flex-grow:1;
   width: max-content;
 }
@@ -219,8 +224,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
-  padding: 51px 40px 48px 40px;
 }
 
 .card__title {
@@ -258,8 +261,15 @@
   background-image: url(../images/card-lot-03.jpg);
 }
 
-.overlay.advance {
+.lots .overlay {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
   padding: 51px 40px 48px 40px;
   flex-direction: column;
   justify-content: space-between;
@@ -282,6 +292,7 @@
   display:  grid;
   grid-template-columns: 287px auto;
   padding:0px 0px 0px 24px;
+  min-height: 595px;
   max-width: 1052px;
   column-gap:72px;
 }
@@ -293,6 +304,9 @@
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
   flex-direction: column;
   gap:100px;
   min-width: 693px;
@@ -310,6 +324,7 @@
 
 .logo__container {
   display: block;
+  position: relative;
   padding:35px 0px 0px 47px;
   width:fit-content;
   height:fit-content;
@@ -323,7 +338,7 @@
 .about__title {
   /* padding: 3px 0px 100px 0px; */
   font-weight: bold;
-  font-size: 40px; 
+  font-size: 40px;
   line-height: 47px;
   text-transform: uppercase;
 }
@@ -332,10 +347,12 @@
   display: flex;
   flex-direction:column;
   gap: 25px;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
 }
+
+.about__text p:nth-child(1) {
+ letter-spacing: 0.01rem;
+}
+
 
 .footer {
   display: flex;
@@ -349,12 +366,20 @@
   height: 48px;
 }
 
+.address_footer {
+  display: flex;
+  flex-direction:column;
+  width: 240px;
+
+}
+
 .footer__menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 18px;
-  line-height: auto;
+  line-height: 24.3px;
+  width: 150px;
   height: fit-content;
 }
 
@@ -374,8 +399,9 @@
   font-family: "Raleway", sans-serif;
 }
 
-.link-active {
+.footer__menu-link.active {
   text-decoration:none;
+  
 }
 
 .footer__menu-link {
@@ -388,4 +414,16 @@
   display:flex;
   gap: 48px;
   list-style: none;
+}
+
+.footer .address__item {
+  font-size: 18px;
+  line-height: 24.3px;
+  font-family: "Raleway", sans-serif;
+}
+
+.foother_address__address-text {
+  font-size: 18px;
+  line-height: 24.3px;
+  font-family: "Raleway", sans-serif;
 }
