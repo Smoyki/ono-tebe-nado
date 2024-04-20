@@ -188,7 +188,6 @@
   font-size: 40px;
   line-height: 47px;
   margin-left: 40px;
-  text-transform: uppercase;
 }
 
 .lots__card-list {
@@ -390,4 +389,3 @@
   gap: 48px;
   list-style: none;
 }
-

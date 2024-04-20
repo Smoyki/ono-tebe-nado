@@ -188,7 +188,6 @@
   font-size: 40px;
   line-height: 47px;
   margin-left: 40px;
-  text-transform: uppercase;
 }
 
 .lots__card-list {
@@ -375,6 +374,7 @@
 
 .footer__social-list-item {
   list-style: none;
+  line-height: 21.13px;
 }
 
 .footer__menu-list-item {
@@ -385,9 +385,13 @@
   text-decoration:none;
 }
 
+/* .footer__menu-link { */
+  font-size: 18px;
+  line-height: 21.1px;
+ } 
+
 .footer__social-list {
   display:flex;
   gap: 48px;
   list-style: none;
 }
-
