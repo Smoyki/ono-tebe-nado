@@ -176,7 +176,8 @@
   background-color: #FFF;
 }
 
-.lots { 
+
+.lots {
   display: grid;
   grid-template-rows: repeat(3, auto);
   gap: 27px;
@@ -196,14 +197,14 @@
   gap: 25px;
 }
 
-.link-lots-card {
+.lots__card-list-item {
   display: block;
   position: relative;
   min-width: 334px;
   min-height: 563px;
 }
 
-.link-lots-card::before {
+.lots__card-list-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -213,28 +214,29 @@
   inset: 0;
 }
 
+/*---настройка картиночек для лотов---*/
 
-.first-img{
+.card_type_film {
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.second-img{
+.card_type_book {
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.third-img {
+.card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
 }
 
-.first-img,
-.second-img,
-.third-img,
+.card_type_film,
+.card_type_book,
+.card_type_picture,
 .cover {
   background-size: cover;
   background-position: top;
 }
 
-.lots-more-link {
+.lots__look-more-link {
   width: fit-content;
   line-height: 24px;
   margin-left: 40px;
@@ -244,10 +246,11 @@
   text-decoration: underline;
 }
 
-.link-lots-style {
+.card-link {
   text-decoration: none;
 }
 
+/*---Оформление текста для лотов---*/
 
 .card-info {
   display: flex;
@@ -257,29 +260,32 @@
   padding: 50px 40px 45px 40px;
 }
 
-.article-titel {
+.card__title {
   font-size: 22px;
   line-height: 120%;
   font-style: normal;
   text-decoration: underline;
 }
 
-.article-text {
+.card__text {
   font-weight: 100;
   max-height: 360px;
   font-size: 20px;
   line-height: 120%;
 }
 
-.article-text,
-.article-titel {
+.card__title, 
+.сard__text {
   position: relative;
   z-index: 3;
   color: white;
 }
 
-.lots_title,
-.article-titel {
+
+
+
+.lots_heading,
+.card__title {
   text-transform: uppercase;
 }
 
