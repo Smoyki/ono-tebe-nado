@@ -239,6 +239,7 @@
   line-height: 24px;
   margin-left: 40px;
   font-size: 20px;
+  /* text-decoration: none; */
   padding: 7px 0px 0px 0px;
   text-decoration: underline;
 }
